@@ -4,13 +4,70 @@
   box-sizing: border-box;
 }
 
+li {
+  margin-right: 10px;
+}
+
+section {
+  padding: 2% 0;
+}
 /* Footer CSS */
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: aqua;
   text-align: center;
+}
+
+/* Footer CSS ends */
+
+/* Carousel Item CSS width & Height */
+
+.carousel-item {
+  width: 100%;
+  height: 700px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Aegean Overview CSS */
+
+.overviewSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overviewText {
+  flex: 2;
+  padding-left: 2rem;
+}
+
+.overviewImage {
+  flex: 1;
+}
+
+.overviewImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* More informatin Section */
+
+body {
+  background-color: rgb(253, 242, 225);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
 }
