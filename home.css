@@ -14,9 +14,12 @@ section {
 /* Footer CSS */
 
 footer {
-  width: 100%;
-  background-color: aqua;
-  text-align: center;
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
 }
 
 /* Footer CSS ends */
