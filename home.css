@@ -20,6 +20,7 @@ footer {
   align-items: center;
   background-color: black;
   color: white;
+  flex-wrap: wrap;
 }
 
 /* Footer CSS ends */
@@ -84,5 +85,8 @@ body {
   .overviewText {
     padding-left: 0rem;
     text-align: justify;
+  }
+  footer {
+    text-align: center;
   }
 }
