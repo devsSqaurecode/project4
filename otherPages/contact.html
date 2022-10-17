@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Page -->
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="../otherPagesCSS/contact.css" />
+    <title>AEGEAN PEARL</title>
+  </head>
+  <body>
+    <!-- Website Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="Bootstrap" height="65" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">The Villa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contactUsSection">
+      <div class="contactUsHeading">
+        <h3 class="text-center" style="color: white">Contact Us</h3>
+      </div>
+      <div class="contactUsInformation">
+        <div class="contactUsForm">
+          <form class="p-1">
+            <div class="row p-2">
+              <div class="col-lg-6">
+                <label for="Your Name">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control m-1"
+                  aria-label="Your Name"
+                  id="Your Name"
+                />
+              </div>
+              <div class="col-lg-6">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control m-1"
+                  aria-label="Your Email"
+                  id="Your Email"
+                />
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-lg-6">
+                <label for="Phone Number">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Phone Number"
+                />
+              </div>
+              <div class="col-lg-6">
+                <label for="Country">Country</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Country"
+                  id="Country"
+                />
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-lg-6">
+                <label for="Arrival">Arrival Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Arrival Date"
+                  aria-label="Arrival Number"
+                  id="Arrival"
+                />
+              </div>
+              <div class="col-lg-6">
+                <label for="Departure">Departure Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Departure Date"
+                  aria-label="Departure Date"
+                  id="Departure"
+                  name="Departure Date"
+                />
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-lg-6">
+                <label for="Adults">Adults</label>
+                <select
+                  class="form-select"
+                  id="Adults"
+                  aria-label="Default select example"
+                >
+                  <option selected>Open this select menu</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label for="Children">Children</label>
+                <select
+                  class="form-select"
+                  id="Children"
+                  aria-label="Default select example"
+                >
+                  <option selected>Open this select menu</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-lg-12">
+                <label for="Comments">Your Comments</label>
+                <textarea class="form-control" name="" id="Comments"></textarea>
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col">
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="contactUsAddress">
+          <p>
+            Aegean Pearl Villa <br />
+            Kanalia, Ornos 84600 Mykonos <br />
+            Cyclades Islands, Greece <br />
+            Telephone: +30 210 8900208 Mobile: +30 6944225576 <br />
+            E-mail: info@aegeanpearlmykonos.com
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Information Section -->
+    <section class="container otherInformation">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="../images/otherInformation/otherInformationTHEVILLA.jpeg"
+              class="card-img-top"
+              alt="OOPS"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Villa</h5>
+              <a href="#" class="btn btn-outline-primary">See more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="../images/otherInformation/otherInformationOURLOCATION.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Our Location</h5>
+              <a href="#" class="btn btn-outline-primary">See more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="../images/otherInformation/otherInformationPHOTOGALLERY.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Photo Gallery</h5>
+              <a href="#" class="btn btn-outline-primary">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footerAddress">
+        <h3>Address</h3>
+        <p>
+          Aegean Pearl Villa <br />
+          Kanalia, Ornos 84600 Mykonos <br />
+          Cyclades Islands, Greece
+        </p>
+      </div>
+      <div class="footerContact">
+        <h3>Contact</h3>
+        <p>
+          Telephone: +30 210 8900208 <br />
+          Mobile: +30 6944225576 <br />
+          E-mail: info@aegeanpearlmykonos.com
+        </p>
+      </div>
+      <div class="footerImage">
+        <a href="https://www.dodisturb.gr/" target="_blank"
+          ><img src="../images/footerImage.png" alt=""
+        /></a>
+      </div>
+    </footer>
+    <div class="squarecode">
+      <p class="text-center">
+        Powered by
+        <a href="https://squarecode.in/" target="_blank">Squarecode</a>
+      </p>
+    </div>
+    <!-- Footer End -->
+    <!-- Javascript Links -->
+    <script src="app.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
