@@ -93,6 +93,11 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .carousel-item {
+    width: 100%;
+    height: 350px;
+  }
+
   .overviewSection {
     gap: 1rem;
     flex-direction: column;
