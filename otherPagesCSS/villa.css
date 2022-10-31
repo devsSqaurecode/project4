@@ -1,23 +1,15 @@
-.villaHeading {
-  color: #83bfd5;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: normal;
-}
-
-.villa p {
-  color: #707172;
-  font-size: 0.9375rem;
-}
-
-.villa li {
-  color: #707172;
-  font-size: 00.9375rem;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.villa {
+  gap: 2rem;
+}
+
+.villa p {
+  text-align: justify;
 }
 
 li {
@@ -27,6 +19,7 @@ li {
 section {
   padding: 2% 0;
 }
+
 /* Footer CSS */
 
 footer {
