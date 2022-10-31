@@ -1,109 +1,117 @@
 .amenitiesHeading {
-    color: #83bfd5;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: normal;
+  color: #83bfd5;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: normal;
 }
 
 .amenities p {
-    color: #707172;
-    font-size: 0.9375rem;
+  color: #707172;
+  font-size: 0.9375rem;
 }
 
 .amenities li {
-    color: #707172;
-    font-size: 00.9375rem;
+  color: #707172;
+  font-size: 00.9375rem;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  li {
-    margin-right: 10px;
-  }
-  
-  section {
-    padding: 2% 0;
-  }
-  /* Footer CSS */
-  
-  footer {
-    padding: 2%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    color: white;
-    flex-wrap: wrap;
-  }
-  
-  /* Footer CSS ends */
-  
-  /* Carousel Item CSS width & Height */
-  
-  .carousel-item {
-    width: 100%;
-    height: 700px;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Aegean Overview CSS */
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  margin-right: 10px;
+}
+
+section {
+  padding: 2% 0;
+}
+/* Footer CSS */
+
+footer {
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Footer CSS ends */
+
+/* Carousel Item CSS width & Height */
+
+.carousel-item {
+  width: 100%;
+  height: 700px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Aegean Overview CSS */
+
+.overviewSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overviewText {
+  flex: 2;
+  padding-left: 2rem;
+}
+
+.overviewImage {
+  flex: 1;
+}
+
+.overviewImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* More informatin Section */
+
+body {
+  background-color: rgb(253, 242, 225);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
   .overviewSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
   }
-  
+
   .overviewText {
-    flex: 2;
-    padding-left: 2rem;
+    padding-left: 0rem;
+    text-align: justify;
   }
-  
-  .overviewImage {
-    flex: 1;
+  footer {
+    text-align: center;
   }
-  
-  .overviewImage img {
+
+  .amenities {
+    flex-direction: column !important;
+  }
+
+  .main-content-1,
+  .main-content-2 {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
   }
-  
-  /* More informatin Section */
-  
-  body {
-    background-color: rgb(253, 242, 225);
-  }
-  
-  .card {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .overviewSection {
-      gap: 1rem;
-      flex-direction: column;
-    }
-  
-    .overviewText {
-      padding-left: 0rem;
-      text-align: justify;
-    }
-    footer {
-      text-align: center;
-    }
-  }
-  
+}

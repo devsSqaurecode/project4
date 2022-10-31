@@ -35,3 +35,18 @@
 .contactUsAddress p {
   text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+  .contactUsSection {
+    height: auto;
+  }
+
+  .contactUsInformation {
+    height: auto;
+    width: 90%;
+  }
+
+  .contactUsAddress {
+    margin-top: 2rem;
+  }
+}
