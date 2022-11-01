@@ -36,6 +36,16 @@
   text-align: left;
 }
 
+.submit-button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.submit-message {
+  color: rgb(15, 162, 15);
+}
+
 @media screen and (max-width: 600px) {
   .contactUsSection {
     height: auto;

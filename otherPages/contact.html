@@ -18,7 +18,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript" src="../sendMail.js"></script>
+    <script type="text/javascript" src="../sendMail.js" defer></script>
+    <script type="text/javascript" src="../message.js" defer></script>
     <title>AEGEAN PEARL</title>
   </head>
   <body>
@@ -83,7 +84,8 @@
                   type="text"
                   class="form-control m-1"
                   aria-label="name"
-                  id="name" required
+                  id="name"
+                  required
                 />
               </div>
               <div class="col-lg-6">
@@ -92,7 +94,8 @@
                   type="email"
                   class="form-control m-1"
                   aria-label="email"
-                  id="email" required
+                  id="email"
+                  required
                 />
               </div>
             </div>
@@ -103,7 +106,8 @@
                   type="tel"
                   class="form-control"
                   aria-label="phone"
-                  id="phone" required
+                  id="phone"
+                  required
                 />
               </div>
               <div class="col-lg-6">
@@ -112,7 +116,8 @@
                   type="text"
                   class="form-control"
                   aria-label="Country"
-                  id="Country" required
+                  id="Country"
+                  required
                 />
               </div>
             </div>
@@ -124,7 +129,8 @@
                   class="form-control"
                   placeholder="Arrival Date"
                   aria-label="Arrival Number"
-                  id="Arrival" required
+                  id="Arrival"
+                  required
                 />
               </div>
               <div class="col-lg-6">
@@ -145,9 +151,12 @@
                 <select
                   class="form-select"
                   id="Adults"
-                  aria-label="Default select example" required
+                  aria-label="Default select example"
+                  required
                 >
-                  <option value="none"selected disabled hidden>Open this select menu</option>
+                  <option value="none" selected disabled hidden>
+                    Open this select menu
+                  </option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -161,10 +170,13 @@
                 <select
                   class="form-select"
                   id="Children"
-                  aria-label="Default select example" required
+                  aria-label="Default select example"
+                  required
                 >
-                <option value="none"selected disabled hidden>Open this select menu</option>
-                <option value="0">0</option>
+                  <option value="none" selected disabled hidden>
+                    Open this select menu
+                  </option>
+                  <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -177,12 +189,25 @@
             <div class="row p-2">
               <div class="col-lg-12">
                 <label for="Comments">Your Comments</label>
-                <textarea class="form-control" name="" id="Comments" required></textarea>
+                <textarea
+                  class="form-control"
+                  name=""
+                  id="Comments"
+                  required
+                ></textarea>
               </div>
             </div>
             <div class="row p-2">
-              <div class="col">
-                <button type="button" class="btn btn-primary" onclick="sendMail()">Submit</button>
+              <div class="col submit-button-container">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="sendMail()"
+                  id="submit-button"
+                >
+                  Submit
+                </button>
+                <span class="submit-message" id="success-message"></span>
               </div>
             </div>
           </form>
