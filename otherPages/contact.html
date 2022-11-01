@@ -14,6 +14,11 @@
     <!-- CSS Page -->
     <link rel="stylesheet" href="../home.css" />
     <link rel="stylesheet" href="../otherPagesCSS/contact.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="../sendMail.js"></script>
     <title>AEGEAN PEARL</title>
   </head>
   <body>
@@ -73,12 +78,12 @@
           <form class="p-1">
             <div class="row p-2">
               <div class="col-lg-6">
-                <label for="Your Name">Your Name</label>
+                <label for="name">Your Name</label>
                 <input
                   type="text"
                   class="form-control m-1"
-                  aria-label="Your Name"
-                  id="Your Name"
+                  aria-label="name"
+                  id="name"
                 />
               </div>
               <div class="col-lg-6">
@@ -86,18 +91,19 @@
                 <input
                   type="email"
                   class="form-control m-1"
-                  aria-label="Your Email"
-                  id="Your Email"
+                  aria-label="email"
+                  id="email"
                 />
               </div>
             </div>
             <div class="row p-2">
               <div class="col-lg-6">
-                <label for="Phone Number">Phone Number</label>
+                <label for="phone">Phone Number</label>
                 <input
                   type="text"
                   class="form-control"
-                  aria-label="Phone Number"
+                  aria-label="phone"
+                  id="phone"
                 />
               </div>
               <div class="col-lg-6">
@@ -175,7 +181,7 @@
             </div>
             <div class="row p-2">
               <div class="col">
-                <button class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="sendMail()">Submit</button>
               </div>
             </div>
           </form>
@@ -275,7 +281,6 @@
     </div>
     <!-- Footer End -->
     <!-- Javascript Links -->
-    <script src="app.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
